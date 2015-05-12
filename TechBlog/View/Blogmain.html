@@ -1,0 +1,14 @@
+<div ng-controller="blogctrl">
+    <div class="ui-widget">
+        <input type="text" class="form-control input-lg" ng-model="q" placeholder="Search" id="tags" ng-keyup="complete()" ></br>
+    </div>
+    <div ng-repeat="blog in blogs | filter:q | orderBy:'-createdDate'">
+        <div class="blog-post">
+            <h2 class="blog-post-title"><div>{{blog.Title}}</div></h2>
+            <p class="blog-post-meta">{{blog.createdDate | date:'MM-dd-yyyy HH:MM:ss'}} by <a href="#/userblogs/{{blog.Createdby}}">{{blog.Createdby}}</a></p>
+            <div class="blog-post-content" ng-bind-html="renderHtml(blog.Content)">...</div>
+            <a class="viewallpost" href="#/detailblog/{{blog.$id}}">View Full Post</a>
+            <hr>
+        </div><!-- /.blog-post -->
+    </div><!-- /.blog-main -->
+</div><!-- /.blog-main -->

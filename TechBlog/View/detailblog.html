@@ -1,0 +1,76 @@
+﻿<div ng-controller="DetailBlogCtrl">
+    <div class="blog-post">
+        <h2 class="blog-post-title"><div>{{blog.Title}}</div></h2>
+        <p class="blog-post-meta">{{blog.createdDate | date:"MM/dd/yyyy 'at' h:mma"}} by <a href="#/detailblog/userblogs/{{blog.Createdby}}">{{blog.Createdby}}</a></p>
+        <div class="blog-post-content" ng-bind-html="renderHtml(blog.Content)"></div>
+        <hr>
+
+        <h3>Leave a Comment</h3>
+        <textarea class="form-control" rows="3" ng-model="comment.usercomment" placeholder="Comment"></textarea><br>
+        <button popover="{{popover_message}}" popover-placement="right" popover-trigger="focus" class="btn btn-success" ng-click="addComment(comment)">Submit</button>
+    </div><!-- /.blog-post -->
+    <div ng-controller="authenticationController">
+        <h3>Login With</h3>
+        <a class="btn btns btn-social-icon  btn-lg btn-facebook">
+            <i class="fa fa-facebook" ng-click="authUser()"></i>
+        </a>
+        <a class="btn btns btn-social-icon  btn-lg btn-twitter">
+            <i class="fa fa-twitter" ng-click="authUser()"></i>
+        </a>
+        <a class="btn btns btn-social-icon  btn-lg btn-google">
+            <i class="fa fa-google" ng-click="authUser()"></i>
+        </a>
+    </div>
+    <hr>
+    <h2>Comments</h2>
+    <hr>
+    <div ng-repeat="comment in blog.Comments" ng-include="'reply_render.html'"></div>
+</div><!-- /.blog-main -->
+<script type="text/ng-template" id="reply_render.html">
+    <div class="row">
+        <br>
+        <div class="col-md-1">
+            <img ng-src="{{ comment.fbprofile.facebook.cachedUserProfile.picture.data.url }}" height="40" width="40" alt="fbprofile" />
+            <br /><br />
+        </div>
+        <div class="col-md-10">
+            <button type="button" class="btn btn-lg btn-primary" data-placement="bottom" data-animation="am-flip-x" bs-popover="popover">
+                Click to toggle popover
+                <br>
+                <small>(using an object)</small>
+            </button>
+            <h1 class="comment-title">{{comment.username}} </h1>
+            <div class="comment-post-meta">
+                {{comment.createdDate }} &nbsp
+            </div>
+            <div class="comment-content">
+                {{comment.usercomment}}
+            </div>
+            <h5>
+
+                <a id="temp" popover="{{comment_likes_data}}" popover-placement="top" popover-trigger="mouseenter" ng-mouseenter="mouseevebt(comment)">{{comment.likes}}</a>
+                <a ng-click="increase_likes(comment)">
+
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="false"></span>
+                </a> |
+                <span>     {{comment.dislike}}</span>
+
+                <a ng-click="decrease_likes(comment)">
+
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a> <a ng-click="add(comment)" style="font-size:15px">Reply</a>
+            </h5>
+            <div class="col-md-10">
+                <textarea class="form-control" ng-show=" reply_visible==comment.id ? true:false" rows="2" ng-model="replycomment" placeholder="Comment"></textarea>
+            </div>
+            <div class="col-md">
+                <button ng-show="reply_visible==comment.id ? true:false" class="btn btn-success" ng-click="post_reply(comment,replycomment)">Post</button>
+            </div>
+            <br />
+            <div class="row">
+                <div ng-repeat="comment in comment.nodes" ng-include="'reply_render.html'"></div>
+            </div>
+
+        </div>
+    </div>
+</script>

@@ -1,0 +1,6 @@
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.dll.config
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.dll
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.pdb
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\obj\Release\TechBlog.csprojResolveAssemblyReference.cache
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\obj\Release\TechBlog.dll
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\obj\Release\TechBlog.pdb

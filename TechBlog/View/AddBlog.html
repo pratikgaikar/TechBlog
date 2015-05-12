@@ -1,0 +1,27 @@
+﻿
+<div class="form-group" ng-controller="BlogAddCtrl">
+    <input type="text" class="form-control" ng-model="blog.Title" placeholder="Blog Title" required><br>
+    <button class="btn btn-default" ng-click="append('code')">Code</button>
+    <button class="btn btn-default" ng-click="append('blockquote')">Quote</button>
+    <textarea class="form-control" rows="8" ng-model="blog.Content" placeholder="Content" required></textarea><br>
+    <button popover="{{popover_message}}" popover-placement="right" popover-trigger="focus" class="btn btn-success" ng-click="addblog(blog)">Publish</button>
+    &nbsp; <button type="button" ng-click="toggleModal()" class="btn btn-primary" data-toggle="modal">
+        Preview
+    </button><br><br>
+    <h3>Login With</h3>
+
+    <div ng-controller="authenticationController">
+        <a class="btn btns btn-social-icon  btn-lg btn-facebook">
+            <i class="fa fa-facebook" ng-click="authUser()"></i>
+        </a>
+        <a class="btn btns btn-social-icon  btn-lg btn-twitter">
+            <i class="fa fa-twitter" ng-click="authUser()"></i>
+        </a>
+        <a class="btn btns btn-social-icon  btn-lg btn-google">
+            <i class="fa fa-google" ng-click="authUser()"></i>
+        </a>
+    </div>
+    <modal title="Preview" visible="showModal">
+        <div ng-bind-html="renderHtml(blog.Content)"></div>
+    </modal>
+</div>

@@ -1,0 +1,23 @@
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\bin\TechBlog.dll.config
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\bin\TechBlog.dll
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\bin\TechBlog.pdb
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\obj\Debug\TechBlog.csprojResolveAssemblyReference.cache
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\obj\Debug\TechBlog.dll
+c:\users\pratik\documents\visual studio 2013\Projects\TechBlog\TechBlog\obj\Debug\TechBlog.pdb
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\bin\TechBlog.dll.config
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\bin\TechBlog.dll
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\bin\TechBlog.pdb
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.csprojResolveAssemblyReference.cache
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.dll
+C:\Users\gaikarp\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.pdb
+C:\Users\pratik\Desktop\TechBlog\TechBlog\bin\TechBlog.dll.config
+C:\Users\pratik\Desktop\TechBlog\TechBlog\bin\TechBlog.dll
+C:\Users\pratik\Desktop\TechBlog\TechBlog\bin\TechBlog.pdb
+C:\Users\pratik\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.csprojResolveAssemblyReference.cache
+C:\Users\pratik\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.dll
+C:\Users\pratik\Desktop\TechBlog\TechBlog\obj\Debug\TechBlog.pdb
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.dll.config
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.dll
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\bin\TechBlog.pdb
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\obj\Debug\TechBlog.dll
+C:\Users\gaikarp\Desktop\LtestProj\Js project\TechBlog\TechBlog\obj\Debug\TechBlog.pdb

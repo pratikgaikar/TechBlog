@@ -1,0 +1,16 @@
+﻿<div ng-controller="UserBlogsController">
+    <div class="blog-header">
+        <h2>The Tech Blog Published By {{filtername}}</h2>
+     </div>
+    <div ng-repeat="blog in blogs |filter:{Createdby:filtername} |orderBy:'-createdDate'">
+        <div class="blog-post">
+            <h2 class="blog-post-title">
+                <div>{{blog.Title}}</div>
+            </h2>
+            <p class="blog-post-meta">{{blog.createdDate}} by <a href="#/userblogs/{{blog.Createdby}}">{{blog.Createdby}}</a></p>
+            <div class="blog-post-content" ng-bind-html="renderHtml(blog.Content)">...</div>
+            <a class="viewallpost" href="#/detailblog/{{blog.$id}}">View Full Post</a>
+            <hr>
+        </div>
+    </div>
+</div>
