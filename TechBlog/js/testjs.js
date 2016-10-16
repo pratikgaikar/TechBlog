@@ -32,7 +32,7 @@ app.config(function ($routeProvider) {
      .otherwise({ redirectTo: '/' });
 });
 
-var ref = new Firebase("https://atomtest.firebaseio.com/Blogs");
+var ref = new Firebase("database address");
 
 app.controller('blogctrl', function ($scope, $firebaseArray, Htmlcontent, $filter) {
     var blogs = {};
